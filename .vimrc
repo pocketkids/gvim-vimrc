@@ -4,7 +4,7 @@ set nobackup
 " 显示行号
 set number
 " 隐藏菜单栏
-" set guioptions-=m
+set guioptions-=m
 " 隐藏工具栏
 set guioptions-=T
 " 隐藏滚动条
@@ -13,13 +13,16 @@ set guioptions-=l
 set guioptions-=R
 set guioptions-=r
 " 设置缩进
+set shiftwidth=2
 set tabstop=2
+" 转换TAB成空格
+set expandtab
 " 搜索时高亮
 set hlsearch
 " 设置窗口大小
 winsize 80 20
 " 设置字体
-set guifont=Monaco:h9:b
+set guifont=Monaco:h10:b
 " 启用语法高亮
 syntax enable
 " 解决Windows乱码
@@ -55,4 +58,4 @@ Bundle 'altercation/vim-colors-solarized'
 filetype plugin indent on
 
 " 设置语法样式
-colorscheme solarized
+colorscheme murphy
